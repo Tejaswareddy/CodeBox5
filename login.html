@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeBox : Login Page</title>
+
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="logo1.png">
+
+<style>
+  .semiContainer .right .radio-button-container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.semiContainer .right .radio-button-container div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.semiContainer .right .radio-button-container div input{
+  height: 15px;
+  width: 15px;
+  accent-color: rgb(239,79,95);
+}
+
+.semiContainer .right .input-container{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-container{
+  flex: wrap;
+  padding-right: 1100px;
+}
+
+.input-container button, .input-container input{
+  padding: 10px 12px;
+
+}
+
+
+
+.input-container input {
+  flex: auto;
+  border: 1.5px solid grey;
+  outline: none;
+  border-radius: 5px;
+}
+
+.input-container button{
+  border: none;
+  background-color: rgb(239,79,95);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right .download-app-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.section1-buttoncontainer{
+  display: flex;
+  gap: 1rem;
+  padding-left: 900px; ;
+}
+
+.section1-buttoncontainer button{
+  padding: 5px 5px;
+  width: 90px;
+  border: 1px solid grey;
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  cursor: pointer;
+}
+
+.navigation-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+
+.link-container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link-container h5{
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 5px;
+  letter-spacing: 0.8px;
+
+}
+
+.footer-link{
+  text-decoration: none;
+  color: grey;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.footer-link:hover{
+  color: black;
+}
+
+
+.social-links-container{
+  display: flex;
+  gap: 0.5rem;
+
+}
+
+.social-links-container button{
+  background-color: black;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.social-links-container button i{
+  color: white;
+  font-size: 13px;
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  .navbar {
+    /* background-color: white; */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    padding-top: 20px;
+    padding-left: 100px;
+    gap: 100px;
+  }
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .login-container {
+    width: 500px;
+    padding: 10px;
+    background: none;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    margin: 60px auto;
+  }
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+  }
+  input[type="text"],
+  input[type="password"], 
+  input[type='number']{
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 6px;
+  }
+  button {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #2890b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #4cae4c;
+  }
+  .semiContainer{
+    padding-top: 50px;
+    padding-left: 500px;
+  }
+  .additional-content {
+  float: right;
+  margin-top: 50px; /* Adjust this margin according to your design */
+}
+#courses-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#courses-dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#courses-dropdown-content ul li {
+    padding: 8px 12px;
+}
+
+#courses-dropdown-content ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#courses-dropdown-content ul li a:hover {
+    background-color: #ddd;
+}
+.btn {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #2890b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .teja{
+    /* background: url(artificial-inte  lligence-3685928_1280.png) ; */
+    background: url(https://www.trindent.com/wp-content/uploads/2020/06/Canva-null-1.png);
+    background-repeat: no-repeat;
+    padding-left: 800px;
+    
+    
+  }
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+}
+.search-form {
+    display: none; /* Hide search bar initially */
+}
+
+/* Style for search icon */
+.search-icon {
+    color: #333;
+    cursor: pointer;
+    margin-right: 20px; /* Add some space between navigation links and search icon */
+}
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+
+</style>
+</head>
+<body>
+  <script>
+    function toggleSearch() {
+        var searchForm = document.querySelector('.search-form');
+        searchForm.style.display = (searchForm.style.display === 'none') ? 'flex' : 'none';
+    }
+</script>
+
+<nav class="navbar">
+  <img src="logo1.png" height="40px" class="logo" style="padding-left: 50px;" alt="Your Logo">
+
+    <a href="#" onclick="popup('investor')" class="btn btn-primary"><p style="background: #ddd;"></p>Inventor Relations</a>
+    <a href="" onclick="popup('language_tutorial')" class="btn btn-primary">courses</a>
+    <a href="#" onclick="popup('login')" class="btn btn-primary">Examples</a>
+    <a href="#" onclick="popup('signup')" class="btn btn-primary">About Us</a>
+
+      <!-- Search Icon -->
+      <div class="search-icon" onclick="toggleSearch()">
+        <i class="fa-solid fa-magnifying-glass"></i> <!-- Assuming you're using Font Awesome for icons -->
+    </div>
+
+    <!-- Search Bar -->
+    <form class="search-form" action="/search" method="get">
+        <input type="text" name="query" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+<script>
+    function toggleSearch() {
+        var searchForm = document.querySelector('.search-form');
+        searchForm.style.display = (searchForm.style.display === 'none') ? 'flex' : 'none';
+    }
+</script>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+</nav>
+
+
+<div id="courses-dropdown-content" class="dropdown-content">
+  <h3>Course Offerings</h3>
+  <ul>
+      <li><a href="#">Java</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">C++</a></li>
+      <li><a href="#">R</a></li>
+  </ul>
+
+  <script>
+    $(document).ready(function(){
+    $('.courses-dropdown').click(function(){
+        $('#courses-dropdown-content').toggle();
+    });
+});
+
+  </script>
+</div>
+<div class="teja">
+<h1 style="text-align: center;"><img style="height: 30px;" src="logo1.png" alt="">CodeBox</h1>
+<div class="login-container">
+  <div></div>
+  <h2 style="font-size: 30px">Login</h2>
+  <form action="/storelogin" method="POST" id="loginForm">
+    <input type="text" name="uname" placeholder="Username" required>
+    <input type="number" name="regname" placeholder="reg-number" required>
+
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" name="submit" class="btn" href>
+    <div class="social-links-container">
+      <button onclick="popup('linkedin')" title="LinkedIn"><i class="fab fa-linkedin-in"></i></button>
+      <button onclick="popup('instagram')" title="Instagram"><i class="fab fa-instagram"></i></button>
+      <button onclick="popup('twitter')" title="Twitter"><i class="fa-brands fa-twitter"></i></button>
+      <button onclick="popup('google')" title="Google"><i class="fa-brands fa-google"></i></button>
+      <button onclick="popup('github')" title="github"><i class="fa-brands fa-github"></i></button>
+    </div>
+    <p class="para2">Don't have an account?</p>
+        <p class="para2">Contact your administrator or <a href="signup.html">Sign Up for a Free Trial</a></p>
+</form>
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function(event){
+      event.preventDefault(); // Prevent the default form submission
+      
+      // Redirect to '111.html'
+      window.location.href = "111.html";
+  });
+</script>
+
+
+  <!-- <form action="/storelogin" method="POST">
+    <input type="text" name="uname" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" name="submit" class="btn" href>
+    <div class="social-links-container">
+      <button onclick="popup('linkedin')" title="LinkedIn"><i class="fab fa-linkedin-in"></i></button>
+      <button onclick="popup('instagram')" title="Instagram"><i class="fab fa-instagram"></i></button>
+      <button onclick="popup('twitter')" title="Twitter"><i class="fa-brands fa-twitter"></i></button>
+      <button onclick="popup('google')" title="Google"><i class="fa-brands fa-google"></i></button>
+      <button onclick="popup('github')" title="github"><i class="fa-brands fa-github"></i></button>
+    </div>
+
+    
+  </form> -->
+</div>
+</div>
+<script>
+function popup(page) {
+  switch(page) {
+    case 'investor':
+      window.open('investor.html', '_blank', 'width=400,height=400');
+      break;
+    case 'language_tutorial':
+      window.open('language_tutorial.html', '_blank', 'width=400,height=400');
+      break;
+    case 'login':
+      window.open('login.html', '_blank', 'width=400,height=400');
+      break;
+    case 'signup':
+      window.open('signup.html', '_blank', 'width=400,height=400');
+      break;
+    case 'linkedin':
+      window.open('https://www.linkedin.com/in/tejeswar-reddy-/', '_blank', 'width=400,height=400');
+      break;
+    case 'instagram':
+      window.open('https://www.instagram.com/', '_blank', 'width=400,height=400');
+      break;
+    case 'twitter':
+      window.open('https://twitter.com/', '_blank', 'width=400,height=400');
+      break;
+    case 'google':
+      window.open('https://www.google.com/', '_blank', 'width=400,height=400');
+      break;
+    case 'github':
+      window.open('https://github.com/Tejaswareddy', '_blank', 'width=400,height=400');
+      break;
+    default:
+      break;
+  }
+}
+</script>
+
+<!-- <div class="language-box">
+  <a href="signup.html" style="color: black;padding-left: 500px; font-size: larger;"><b>If you don't have any account -- ClickHere</b></a>
+  </div> -->
+
+  <section class="container get-the-app">
+    <div class="semiContainer">
+      <div class="left">
+        <img src="images/mobileBanner.png" alt="">
+      </div>
+      <div class="right">
+        <h1>Coding Supermacy</h1>
+        <p>
+          We will send you a link, Open it on your phone to view our app in your Mobile
+        </p>
+        <div class="radio-button-container">
+          <div>
+            <input type="radio" id="email" name="download-app">
+            <label for="email" style="font-size:14px">Email</label>
+          </div>
+          <div>
+            <input type="radio" id="phone" name="download-app">
+            <label for="phone" style="font-size:14px">Phone</label>
+          </div>
+        </div>
+        
+<div class="container mt-5">
+<div class="input-container" style="padding-top: 15px;">
+  <input type="email" placeholder="Email">
+  <p> <a href="mailto:investor@company.com">investor@company.com</a></p>
+  <!-- <button onclick="shareAppLink()">Share App Link</button> -->
+</div>
+</div>
+        <div class="download-app-container">
+          
+          <div class="download-app-icons">
+            <img src="images/playStore.png" alt="">
+            <img src="images/appleStore.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <div class="footer-section1">
+      <img src="images/logo.png" alt="">
+      <div class="section1-buttoncontainer">
+        <button>
+          <img src="https://flagcdn.com/w40/in.png" alt="indian flag"
+          style="width:17px; color: black;"
+          ><p style="color: black;">India</p>
+        </button>
+        <button><i class="fa fa-globe"></i >
+          <p style="color: black;">English</p></button>
+      </div>
+    </div>
+    <div class="navigation-container">
+      <div class="link-container">
+        <h5>ABOUT </h5>
+        <a href="#" class="footer-link">Who we are</a>
+        <a href="#" class="footer-link">Blogs</a>
+        <a href="#" class="footer-link">Work with us</a>
+        <a href="#" class="footer-link">Investor Relation</a>
+        <a href="#" class="footer-link">Report Fraud</a>
+      </div>
+
+      <div class="link-container">
+        <h5>CodeBox</h5>
+
+        <a href="#" class="footer-link">Coding</a>
+        <a href="#" class="footer-link">Learning India</a>
+        <a href="#" class="footer-link">Hyperpure</a>
+        <a href="#" class="footer-link">LanguageLand</a>
+
+      </div>
+
+      <div class="link-container">
+        <h5>FOR CODING PRACTISES</h5>
+        <a href="#" class="footer-link">Partner With Us</a>
+        <a href="#" class="footer-link">Apps for You</a>
+        <br/>
+        <h5>FOR ENTERPRISES</h5>
+        <a href="#" class="footer-link">Zomato For Work</a>
+
+      </div>
+
+      <div class="link-container">
+        <h5>Learn More</h5>
+
+        <a href="#" class="footer-link">Privacy</a>
+        <a href="#" class="footer-link">Security</a>
+        <a href="#" class="footer-link">Terms</a>
+        <a href="#" class="footer-link">SiteMap</a>
+
+
+      </div>
+
+      <div class="link-container">
+        <h5>SOCIAL LINKS</h5>
+        <div class="social-links-container">
+          <button onclick="alert('LinkedIn')"><i class="fab fa-linkedin-in"></i></button>
+          <button onclick="alert('Instagram')"><i class="fab fa-instagram"></i></button>
+          <button onclick="alert('Twitter')"><i class="fa-brands fa-twitter"></i></button>
+          <button onclick="alert('Google')"><i class="fa-brands fa-google"></i></button>
+          <button onclick="alert('GitHub')"><i class="fa-brands fa-github"></i></button>
+        </div>
+        <br>
+        <!-- <img src="images/appleStore.png" alt="footer appstore logo" class="footer-section-logos">
+        <img src="images/playStore.png" alt="footer playstore logo" class="footer-section-logos"> -->
+      </div>
+
+
+
+    </div>
+
+    <div class="disclaimer" style="color: #333;">
+      By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Pvt Ltd. All rights reserved.
+    </div>
+
+  </footer>
+
+
+
+</body>
+</html>
+<style>
+  
+.semiContainer .right .radio-button-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.semiContainer .right .radio-button-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.semiContainer .right .radio-button-container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239,79,95);
+}
+
+.semiContainer .right .input-container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input-container{
+    flex: wrap;
+    padding-right: 1100px;
+}
+
+.input-container button, .input-container input{
+    padding: 10px 12px;
+
+}
+
+
+
+.input-container input {
+    flex: auto;
+    border: 1.5px solid grey;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-container button{
+    border: none;
+    background-color: rgb(239,79,95);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right .download-app-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.section1-buttoncontainer{
+    display: flex;
+    gap: 1rem;
+    padding-left: 900px; ;
+}
+
+.section1-buttoncontainer button{
+    padding: 5px 5px;
+    width: 90px;
+    border: 1px solid grey;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    cursor: pointer;
+}
+
+.navigation-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+
+.link-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link-container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+
+}
+
+.footer-link{
+    text-decoration: none;
+    color: grey;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer-link:hover{
+    color: black;
+}
+
+
+.social-links-container{
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.social-links-container button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.social-links-container button i{
+    color: white;
+    font-size: 13px;
+}
+
+.disclaimer{
+  /* background: #333; */
+    width: 90%;
+    margin: auto;
+    color: lemonchiffon;
+    font-size: 12px;
+    border-top: 1px solid grey;
+    padding-top: 2rem;
+}
+
+
+
+@media only screen and (max-width: 900px){
+    .navigation-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+.we-offer{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+}
+
+@media only screen and (max-width: 600px){
+    .navigation-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+}
+
+@media only screen and (max-width: 450px){
+    .navigation-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .we-offer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .navbar-menu-container a{
+        display: none;
+    }
+
+    .navbar-menu-container .user-icon{
+        display: flex;
+    }
+
+    .navbar{
+        padding: 16px 16px;
+    }
+
+    .hero-section{
+        min-height: 80vh;
+    }
+
+    .hero-section-input-container{
+        flex-direction: column;
+        background-color: transparent;
+        width:100%;
+    }
+
+    .input-container-search , .input-container-location{
+        padding:15px;
+        border-radius: 10px;
+        width:95%;
+    }
+
+    .hero-section-container{
+        min-height: calc(80vh - 60px);
+    }
+
+    .hero-section-title{
+        font-size: 20px;
+        width: 95%;
+    }
+
+
+
+} 
+</style>
+
+</body>
+</html>
+

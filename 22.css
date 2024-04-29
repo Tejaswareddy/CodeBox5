@@ -1,0 +1,709 @@
+/* display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+background-color: #f5f8ff;
+border: 1px solid #0556f3;
+box-sizing: border-box;
+box-shadow: 0px 12px 24px rgba(2,30,84,.1);
+border-radius: 4px;
+padding: 8px 4px;
+pointer-events: all; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;}
+
+body{
+    width: 100%;
+    background: white;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+}
+
+.navbar{
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 25px 60px;
+}
+.navbar {
+    background-color: whitesmoke;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    padding-left: 200px;
+    gap: 10px;
+  }
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+.navbar-menu-container{
+    /* background: grey; */
+    display: flex;
+    gap:30px;
+}
+
+.hero-section-container{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    /* height: calc(60vh - 60px); */
+}
+
+/* .hero-section-title{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+} */
+
+.hero-section-input-container{
+    background-color: white;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    gap: 10px;
+    width: 60%;
+    border-radius: 20px;
+    flex-direction: row;
+}
+
+.input-container-location, .input-container-search{
+    padding: 5px;
+    border:none;
+    outline:none;
+}
+
+.input-container-location{
+    width: 35%;
+    border-right: 1px solid #e0e0e0;
+}
+
+.input-container-search{
+    width: 65%;
+}
+
+.container{
+    margin: 3rem auto;
+    width: 80%;
+}
+.tutorial-section{
+    padding-left: 250px;
+    padding-right: 930px;
+    
+  animation: imgUp 1s linear infinite alternate;
+  
+
+
+    
+}
+.we-offer{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.we-offer-card{
+    border-radius: 10px;
+     overflow: hidden; 
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.main:hover{
+    top: 0;
+    /* transform: scale(1.05); */
+    color: blue;
+}
+.navbar:hover{
+    /* transform: scale(0.90); */
+    color: blue;
+}
+.we-offer-card:hover{
+    transform: scale(1.05); 
+     color: darkblue;
+    color: indigo;
+}
+.card1:hover{
+    transform: scale(1.05);
+    color: red;
+}
+.card2:hover{
+    transform: scale(1.05);
+}
+.card3:hover{
+    color: red;
+    transform: scale(1.05);
+}
+.we-offer-card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+}
+.we-offer-card .we-offer-content{
+    padding: 0.5rem;
+}
+
+.we-offer-card .we-offer-content p:last-child{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50%;
+    white-space: nowrap;
+}
+.we-offer-container{
+    padding: 10px;
+}
+
+.we-offer-container h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.we-offer-container p{
+    font-size: 13px;
+}
+
+.collections h1{
+    font-weight: 600;
+}
+
+.collections .sub-heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sub-heading-container span:nth-child(2){
+    color: #ff7e8b;
+    font-size: 13px;
+    cursor:  pointer;
+}
+
+.collections-cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.0rem;
+    margin-top: 1.5rem;
+}
+
+.collections-cards-container .card{
+    height:  300px;
+    min-width: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.05) 50%,
+        rgba(0,0,0,0.05) 100%
+    );
+}
+
+.collections-cards-container .card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+}
+
+.content h4{
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+
+.get-the-app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255,251,247);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.get-the-app .semiContainer{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 1.5rem;
+}
+
+.get-the-app .semiContainer .left{
+    flex: 2;
+}
+
+.get-the-app .semiContainer .left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get-the-app .semiContainer .right{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.link:hover{
+
+    color: blue;
+}
+
+.right h1{
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.right p{
+    font-size: 0.8rem;
+}
+
+.semiContainer .right .radio-button-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.semiContainer .right .radio-button-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.semiContainer .right .radio-button-container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239,79,95);
+}
+
+.semiContainer .right .input-container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input-container{
+    flex: wrap;
+}
+
+.input-container button, .input-container input{
+    padding: 10px 12px;
+
+}
+
+
+
+.input-container input {
+    flex: auto;
+    border: 1.5px solid grey;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-container button{
+    border: none;
+    background-color: rgb(239,79,95);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right .download-app-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.download-app-container h5{
+    font-weight: 400;
+    color: grey;
+}
+
+.download-app-container div{
+    display: flex;
+    gap: 1rem;
+}
+
+.download-app-container div img{
+    width: 35%;
+}
+
+
+
+.footer{
+    width: 100%;
+}
+
+.footer-section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.footer-section1 img{
+    width: 120px;
+}
+
+.section1-buttoncontainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.section1-buttoncontainer button{
+    padding: 5px 5px;
+    width: 90px;
+    border: 1px solid grey;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    cursor: pointer;
+}
+
+.navigation-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+
+.link-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link-container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+
+}
+
+.footer-link{
+    text-decoration: none;
+    color: grey;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer-link:hover{
+    color: black;
+}
+
+
+.social-links-container{
+    display: flex;
+    gap: 0.5rem;
+
+}
+
+.social-links-container button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.social-links-container button i{
+    color: white;
+    font-size: 13px;
+}
+
+.footer-section-logo{
+    width: 100%;
+}
+
+.disclaimer{
+    background: #2980b9;
+    width: 90%;
+    margin: auto;
+    color: lemonchiffon;
+    font-size: 12px;
+    border-top: 1px solid grey;
+    padding-top: 2rem;
+}
+
+
+
+@media only screen and (max-width: 900px){
+    .navigation-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+.we-offer{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+}
+
+@media only screen and (max-width: 600px){
+    .navigation-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+}
+
+@media only screen and (max-width: 450px){
+    .navigation-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .we-offer{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .navbar-menu-container a{
+        display: none;
+    }
+
+    .navbar-menu-container .user-icon{
+        display: flex;
+    }
+
+    .navbar{
+        padding: 16px 16px;
+    }
+
+    .hero-section{
+        min-height: 80vh;
+    }
+
+    .hero-section-input-container{
+        flex-direction: column;
+        background-color: transparent;
+        width:100%;
+    }
+
+    .input-container-search , .input-container-location{
+        padding:15px;
+        border-radius: 10px;
+        width:95%;
+    }
+
+    .hero-section-container{
+        min-height: calc(80vh - 60px);
+    }
+
+    .hero-section-title{
+        font-size: 20px;
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 1300px){
+
+    .get-the-app .semiContainer .left, .get-the-app .semiContainer .right{
+        flex: 1;
+    }
+
+    .get-the-app .semiContainer{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .get-the-app{
+        padding: 2rem;
+     }
+
+    .get-the-app .semiContainer{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+    .get-the-app{
+        padding: 3rem 0;
+    }
+
+    .get-the-app .input-container{
+        flex-direction: column;
+    }
+
+    .get-the-app .semiContainer{
+        width: 80%;
+        flex-direction: column;
+    }
+
+} 
+
+.top-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #ccc; /* Top line */
+    padding: 10px;
+}
+
+/* .languages ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.languages ul li {
+    display: inline;
+}
+
+.languages ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.languages ul li a:hover {
+    background-color: #e0e0e0;
+}
+
+.logo img {
+    max-height: 40px; /* Adjust as needed */
+/* } */ 
+.languages ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.languages ul li {
+    display: inline-block;
+    margin-right: 30px; /* Adjust the gap between buttons */
+}
+
+.languages ul li:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+.languages ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.languages ul li a:hover {
+    background-color: #e0e0e0;
+}
+
+.logo img {
+    max-height: 40px; /* Adjust as needed */
+}
+main .right img {
+  animation: imgUp 1s linear infinite alternate;
+  
+
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+}
+.search-form {
+    display: none; /* Hide search bar initially */
+}
+
+/* Style for search icon */
+.search-icon {
+    color: #333;
+    cursor: pointer;
+    margin-right: 20px; /* Add some space between navigation links and search icon */
+}

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBox : Basics of Html</title>
+    <link rel="icon" type="image/x-icon" href="logo1.png">
+
+    <link rel="stylesheet" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        section, footer {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+        }
+        .navbar {
+    background-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    padding-left: 350px;
+    gap: 100px;
+  }
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  .collections-cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 1.5rem;
+}
+  .collections-cards-container .card{
+    height:  300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.9) 0%,
+        rgba(0,0,0,0.05) 50%,
+        rgba(0,0,0,0.05) 100%
+    );
+}
+
+.collections-cards-container .card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 52px 16px;
+    font-size: 0.9rem;
+}
+
+.card1:hover{
+    transform: scale(1.05);
+    color: red;
+}
+.card2:hover{
+    transform: scale(1.05);
+}
+.card3:hover{
+    color: red;
+    transform: scale(1.05);
+}
+.language-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+            padding: 10px;
+            padding-bottom: 70px;
+        }
+
+        .language-box {
+            width: 100%;
+            height: 100px;
+            background-color: #2980b9;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+}
+
+.card-content p {
+    margin-bottom: 0;
+}
+
+
+
+        
+        
+    </style>
+</head>
+<body>
+    
+
+    <div class="navbar">
+
+        <a href="investor" class="link" onclick="showPopup('Inventor Relations')">Inventor Relations</a>
+        <a href="language tutorial" class="link" onclick="showPopup('Language Tutorial')">LanguageTutorial</a>
+        <a href="Login" class="link" onclick="showPopup('Login')">Login</a>
+        <a href="signup" class="link" onclick="showPopup('SignUp')">SignUp</a>
+    </div>
+
+    <div class="main">
+        <p style="text-align: center; font-size: 50px; padding-bottom: 35px; padding-top: 15px; padding-left: 100px;"><b>   Python Programming Basics
+
+        </b></pre>
+       
+    </div>
+    
+
+    <img style="padding-left: 400px;" width="80%" height="550px" src="html22.jpg                           
+    
+    
+    " alt="">
+
+    <pre style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; padding-top: 50px;font-size: larger;padding-bottom: 40px;">The past few years have seen plenty of uncertainty in the tech industry.
+      Yet even as the broader economic outlook appears to be softening,
+       the demand – and competition – for skilled tech talent has only increased.
+
+     To get an unbiased, unparalleled view into the programming language popularity,
+      HackerRank undertook an intensive study of our platform data. From the supremacy
+       of Java and Python to the rise of Go and TypeScript, 2023 is on track to be
+        a pivotal year for developer skills.
+     
+     Methodology:
+
+     Our ranking of the most popular programming languages draws from our 2023
+      Developer Skills Report. In that report, we used exclusive data from
+       the HackerRank platform to understand employer demand, developer
+        preference, and candidate engagement.
+     
+     We tracked the popularity of languages by analyzing the languages
+      candidates chose to use on assessments with multiple
+       options available, as well as their proficiency in those languages.
+        For key languages on our list, we’ve included data and insights
+         on employer demand for the skill. We also included HankerRank Community
+          practice data to get a full spectrum of skill preferences. The rates 
+          of change for data are based on the difference between volume in 
+          2021 and 2022. In total, our analysis is based on the language 
+          preferences of 2.8 million developers.</pre>
+    <section>
+        <!-- <h2 style="color: grey;">Introduction to Python</h2>
+        <p style="padding-top: 10px; font-size: large;">Python is a high-level, <pre>interpreted programming language known for its ease of learning and readability.</pre></p>
+        <img style="padding-left: 800px; width: 80%;" src="cover-artwork.png" alt=""> -->
+
+        <div class="language-container">
+            <div class="language-box">
+                <a href="Data.html" style="color: white;">Installation of Python Compiler</a>
+                </div>
+            <div class="language-box">
+                <a href="Artificial" style="color: white;">Complete To get Certificate</a>
+            </div>
+            <div class="language-box">
+                <a href="python.html" style="color: white;">Python Importance</a>
+            </div>
+            <div class="language-box">
+                <a href="java.html" style="color: white;">Furthur Learning</a>
+            </div>
+            <div class="language-box">
+                <a href="Javascript.html" style="color: white;">Sub in Python</a>
+            </div>
+            <div class="language-box">
+                <a href="cpp.html" style="color: white;">Pyhton in Machine Learning</a>
+            </div>
+            <div class="language-box">
+                <a href="dsss.html" style="color: white;">Python in Data Structures</a>
+            </div>
+            
+        </div>
+        <h3 class="heading" style="padding-bottom: 50px;" > video gallery</h3>
+
+        <div class="container222">
+            <div class="main-video">
+                <div class="video">
+                    <video src="Apnacollage.mp4" controls muted></video>
+                    <h3 class="title">01. video title goes here</h3>
+                </div>
+            </div>
+            <div class="video-list">
+                <div class="vid active">
+                    <video src="Apnacollage.mp4" muted></video>
+                    <h3 class="title">02. video title goes here</h3>
+                </div>
+            
+                    <div class="vid active">
+                        <video src="Apnacollage.mp4" muted></video>
+                        <h3 class="title">02. video title goes here</h3>
+                    </div>
+                        <div class="vid active">
+                            <video src="Apnacollage.mp4" muted></video>
+                            <h3 class="title">02. video title goes here</h3>
+                        </div>
+                        
+                            <div class="vid active">
+                                <video src="Apnacollage.mp4" muted></video>
+                                <h3 class="title">02. video title goes here</h3>
+                            </div>
+                                <div class="vid active">
+                                    <video src="Apnacollage.mp4" muted></video>
+                                    <h3 class="title">02. video title goes here</h3>
+                                </div>
+                                <div class="vid active">
+                                    <video src="Apnacollage.mp4" muted></video>
+                                    <h3 class="title">02. video title goes here</h3>
+                                </div>
+                                <div class="vid active">
+                                    <video src="Apnacollage.mp4" muted></video>
+                                    <h3 class="title">02. video title goes here</h3>
+                                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        
+        let listVideo = document.querySelectorAll('.video-list .vid' );
+        let mainVideo = document.querySelector('.main-video video');
+        let title = document.querySelector('.main-video .title'); // Corrected selector
+    
+        listVideo.forEach(video=>{
+            video.onclick = () =>{
+                listVideo.forEach(vid=>vid.classList.remove('active'));
+                video.classList.add('active');
+                if(video.classList.contains('active')){
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src=src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                };
+            };
+        });
+    
+    
+        </script>
+</div>
+
+    <script>
+        function showPopup(message) {
+            alert(message);
+        }
+    </script>
+
+    <h1 style="padding-top: 20px; padding-bottom: 20px; text-align: center;">Section for the Shorts</h1>
+    
+    <body>
+        <div class="card-container">
+            <div class="card">
+                <video src="short.mp4" controls alt="Placeholder Image">
+                <div class="card-content">
+                    <h2>Card Title 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <video src="short.mp4" controls alt="Placeholder Image">
+                <div class="card-content">
+                    <h2>Card Title 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <video src="short.mp4" controls alt="Placeholder Image">
+                <div class="card-content">
+                    <h2>Card Title 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <!-- More cards can be added here -->
+        </div>
+
+        <section class="container get-the-app">
+            <div class="semiContainer">
+              <div class="left">
+                <img src="images/mobileBanner.png" alt="">
+              </div>
+              <div class="right">
+                <h1>Coding Supermacy</h1>
+                <p>
+                  We will send you a link, Open it on your phone to view our app in your Mobile
+                </p>
+                <div class="radio-button-container">
+                  <div>
+                    <input type="radio" id="email" name="download-app">
+                    <label for="email" style="font-size:14px">Email</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="phone" name="download-app">
+                    <label for="phone" style="font-size:14px">Phone</label>
+                  </div>
+                </div>
+                
+        <div class="container mt-5">
+        <div class="input-container" style="padding-top: 15px;">
+          <input type="email" placeholder="Email">
+          <p> <a href="mailto:investor@company.com">investor@company.com</a></p>
+          <!-- <button onclick="shareAppLink()">Share App Link</button> -->
+        </div>
+        </div>
+                <div class="download-app-container">
+                  
+                  <div class="download-app-icons">
+                    <img src="images/playStore.png" alt="">
+                    <img src="images/appleStore.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <footer class="container footer">
+            <div class="footer-section1">
+              <img src="images/logo.png" alt="">
+              <div class="section1-buttoncontainer">
+                <button>
+                  <img src="https://flagcdn.com/w40/in.png" alt="indian flag"
+                  style="width:17px; color: black;"
+                  ><p style="color: black;">India</p>
+                </button>
+                <button><i class="fa fa-globe"></i >
+                  <p style="color: black;">English</p></button>
+              </div>
+            </div>
+            <div class="navigation-container">
+              <div class="link-container">
+                <h5>ABOUT </h5>
+                <a href="#" class="footer-link">Who we are</a>
+                <a href="#" class="footer-link">Blogs</a>
+                <a href="#" class="footer-link">Work with us</a>
+                <a href="#" class="footer-link">Investor Relation</a>
+                <a href="#" class="footer-link">Report Fraud</a>
+              </div>
+        
+              <div class="link-container">
+                <h5>CodeBox</h5>
+        
+                <a href="#" class="footer-link">Coding</a>
+                <a href="#" class="footer-link">Learning India</a>
+                <a href="#" class="footer-link">Hyperpure</a>
+                <a href="#" class="footer-link">LanguageLand</a>
+        
+              </div>
+        
+              <div class="link-container">
+                <h5>FOR CODING PRACTISES</h5>
+                <a href="#" class="footer-link">Partner With Us</a>
+                <a href="#" class="footer-link">Apps for You</a>
+                <br/>
+                <h5>FOR ENTERPRISES</h5>
+                <a href="#" class="footer-link">Zomato For Work</a>
+        
+              </div>
+        
+              <div class="link-container">
+                <h5>Learn More</h5>
+        
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Security</a>
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">SiteMap</a>
+        
+        
+              </div>
+        
+              <div class="link-container">
+                <h5>SOCIAL LINKS</h5>
+                <div class="social-links-container">
+                  <button onclick="alert('LinkedIn')"><i class="fab fa-linkedin-in"></i></button>
+                  <button onclick="alert('Instagram')"><i class="fab fa-instagram"></i></button>
+                  <button onclick="alert('Twitter')"><i class="fa-brands fa-twitter"></i></button>
+                  <button onclick="alert('Google')"><i class="fa-brands fa-google"></i></button>
+                  <button onclick="alert('GitHub')"><i class="fa-brands fa-github"></i></button>
+                </div>
+                <br>
+                <!-- <img src="images/appleStore.png" alt="footer appstore logo" class="footer-section-logos">
+                <img src="images/playStore.png" alt="footer playstore logo" class="footer-section-logos"> -->
+              </div>
+        
+        
+        
+            </div>
+        
+            <div class="disclaimer" style="color: #333;">
+              By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Pvt Ltd. All rights reserved.
+            </div>
+        
+          </footer>
+        
+        
+        
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+.heading{
+    color: grey;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+body{
+    background: #eee;
+}
+.container222{
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+
+}
+
+.container222 .main-video{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+.container222 .main-video video{
+    width: 100%;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+.container222 .main-video .title{
+    color: #333;
+    font-size: 23px ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.container222 .video-list{
+    background: #fff;
+    border-radius: 10px;
+    height: 520px;
+    overflow-y: scroll;
+    padding-left: 30px;
+}
+
+.container222 .video-list::-webkit-scrollbar{
+    width: 7px;
+}
+.container222 .video-list::-webkit-scrollbar-track{
+    background: #ccc;
+    border-radius: 50px;
+}
+.container222 .video-list::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 50px;
+}
+.container222 .video-list .vid video{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.container222 .video-list .vid{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+
+
+.container222 .video-list .vid:hover{
+    background: grey;
+
+}
+
+.container222 .video-list .vid.active{
+    background: #2980b9;
+
+}
+          
+        .semiContainer .right .radio-button-container{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .semiContainer .right .radio-button-container div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .semiContainer .right .radio-button-container div input{
+            height: 15px;
+            width: 15px;
+            accent-color: rgb(239,79,95);
+        }
+        
+        .semiContainer .right .input-container{
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .input-container{
+            flex: wrap;
+            padding-right: 1100px;
+        }
+        
+        .input-container button, .input-container input{
+            padding: 10px 12px;
+        
+        }
+        
+        
+        
+        .input-container input {
+            flex: auto;
+            border: 1.5px solid grey;
+            outline: none;
+            border-radius: 5px;
+        }
+        
+        .input-container button{
+            border: none;
+            background-color: rgb(239,79,95);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .right .download-app-container{
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+        }
+        
+        .section1-buttoncontainer{
+            display: flex;
+            gap: 1rem;
+            padding-left: 900px; ;
+        }
+        
+        .section1-buttoncontainer button{
+            padding: 5px 5px;
+            width: 90px;
+            border: 1px solid grey;
+            background-color: transparent;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:10px;
+            cursor: pointer;
+        }
+        
+        .navigation-container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            width: 90%;
+            margin: auto;
+            gap: 1rem;
+            padding: 3rem 0;
+        }
+        
+        
+        .link-container{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .link-container h5{
+            font-weight: 500;
+            font-size: 15px;
+            margin-bottom: 5px;
+            letter-spacing: 0.8px;
+        
+        }
+        
+        .footer-link{
+            text-decoration: none;
+            color: grey;
+            font-size: 13px;
+            font-weight: 300;
+        }
+        
+        .footer-link:hover{
+            color: black;
+        }
+        
+        
+        .social-links-container{
+            
+            gap: 0.5rem;
+        
+        }
+        
+        .social-links-container button{
+            background-color: black;
+            border: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        
+        .social-links-container button i{
+            color: white;
+            font-size: 13px;
+        }
+        
+        .disclaimer{
+          /* background: #333; */
+            width: 90%;
+            margin: auto;
+            color: lemonchiffon;
+            font-size: 12px;
+            border-top: 1px solid grey;
+            padding-top: 2rem;
+        }
+        
+        
+        
+        @media only screen and (max-width: 900px){
+            .navigation-container{
+                grid-template-columns: repeat(3,1fr);
+            }
+        
+        .we-offer{
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        
+        
+        }
+        
+        @media only screen and (max-width: 600px){
+            .navigation-container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        
+        
+        }
+        
+        @media only screen and (max-width: 450px){
+            .navigation-container{
+                grid-template-columns: repeat(1,1fr);
+            }
+        
+            .we-offer{
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+        }
+        
+        
+        @media only screen and (max-width: 600px){
+            .navbar-menu-container a{
+                display: none;
+            }
+        
+            .navbar-menu-container .user-icon{
+                display: flex;
+            }
+        
+            .navbar{
+                padding: 16px 16px;
+            }
+        
+            .hero-section{
+                min-height: 80vh;
+            }
+        
+            .hero-section-input-container{
+                flex-direction: column;
+                background-color: transparent;
+                width:100%;
+            }
+        
+            .input-container-search , .input-container-location{
+                padding:15px;
+                border-radius: 10px;
+                width:95%;
+            }
+        
+            .hero-section-container{
+                min-height: calc(80vh - 60px);
+            }
+        
+            .hero-section-title{
+                font-size: 20px;
+                width: 95%;
+            }
+        
+        }
+        
+        @media only screen and (max-width: 1300px){
+        
+            .get-the-app .semiContainer .left, .get-the-app .semiContainer .right{
+                flex: 1;
+            }
+        
+            .get-the-app .semiContainer{
+                width: 80%;
+            }
+        }
+        
+        @media only screen and (max-width: 900px){
+        
+            .get-the-app{
+                padding: 2rem;
+             }
+        
+            .get-the-app .semiContainer{
+                width: 90%;
+            }
+        }
+        
+        @media only screen and (max-width: 700px){
+        
+            .get-the-app{
+                padding: 3rem 0;
+            }
+        
+            .get-the-app .input-container{
+                flex-direction: column;
+            }
+        
+            .get-the-app .semiContainer{
+                width: 80%;
+                flex-direction: column;
+            }
+        
+        } 
+        </style>
+        
+    </body>
+    </html>

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBox : Recent-Hyped languages</title>
+    <link rel="icon" type="image/x-icon" href="logo1.png">
+
+    <link rel="stylesheet" href="topsearch.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+
+.navbar {
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    padding-left: 150px;
+    gap: 100px;
+  }
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: large;
+  }
+        .language-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 50px;
+            padding: 10px;
+        }
+
+        .language-box {
+            width: 100%;
+            height: 100px;
+            background-color: #2980b9;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .semiContainer{
+            padding-left: 100px;
+        }
+    </style>
+</head>
+<body>
+
+  <script>
+    function toggleSearch() {
+        var searchForm = document.querySelector('.search-form');
+        searchForm.style.display = (searchForm.style.display === 'none') ? 'flex' : 'none';
+    }
+</script>
+
+    
+    <nav class="navbar">
+      <img style="height: 30px;" width="40px" src="logo1.png" alt="">
+
+        <a href="#" onclick="popup('investor')">Inventor Relations</a>
+        <a href="#" onclick="popup('language_tutorial')">Add Language Tutorial</a>
+        <a href="#" onclick="popup('login')">Pricing</a>
+        <a href="#" onclick="popup('signup')">About Us</a>
+        
+    <div class="search-icon" onclick="toggleSearch()">
+      <i class="fa-solid fa-magnifying-glass"></i> <!-- Assuming you're using Font Awesome for icons -->
+  </div>
+
+  <!-- Search Bar -->
+  <form class="search-form" action="/search" method="get">
+      <input type="text" name="query" placeholder="Search...">
+      <button type="submit">Search</button>
+  </form>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+</div>
+    </nav>
+    <script>
+      function popup(page) {
+        switch(page) {
+          case 'investor':
+            window.open('investor.html', '_blank', 'width=400,height=400');
+            break;
+          case 'language_tutorial':
+            window.open('language_tutorial.html', '_blank', 'width=400,height=400');
+            break;
+          case 'login':
+            window.open('login.html', '_blank', 'width=400,height=400');
+            break;
+          case 'signup':
+            window.open('signup.html', '_blank', 'width=400,height=400');
+            break;
+          case 'linkedin':
+            window.open('https://www.linkedin.com/in/tejeswar-reddy-/', '_blank', 'width=400,height=400');
+            break;
+          case 'instagram':
+            window.open('https://www.instagram.com/', '_blank', 'width=400,height=400');
+            break;
+          case 'twitter':
+            window.open('https://twitter.com/', '_blank', 'width=400,height=400');
+            break;
+          case 'google':
+            window.open('https://www.google.com/', '_blank', 'width=400,height=400');
+            break;
+          case 'github':
+            window.open('https://github.com/Tejaswareddy', '_blank', 'width=400,height=400');
+            break;
+          default:
+            break;
+        }
+      }
+      </script>
+
+    <div class="main">
+        <p style="text-align: center; font-size: 50px;"><b>The Most In-Demand Programming Languages for 2023
+
+        </b></pre>
+       
+    </div>
+
+    <img style="padding-left: 300px;" width="60%" height="550px" src="recenthyped2222.png" alt="">
+
+    <pre style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center; padding-top: 50px;font-size: larger;padding-bottom: 40px;">
+     
+     Methodology:
+
+     Our ranking of the most popular programming languages draws from our 2023
+      Developer Skills Report. In that report, we used exclusive data from
+       the HackerRank platform to understand employer demand, developer
+        preference, and candidate engagement.
+     
+     </pre>
+
+          <img src="jcm.png" width="88%" style="padding-left: 50px;" alt="">
+          <img src="jcv.png" width="92%" style="padding-top: 50px; padding-bottom: 50px;" alt="">
+
+
+          <!-- <pre style=" text-align: center;font-size: large;">
+            <p style="font-size: 38px; text-align: center; ">The Most In-Demand Programming Languages</p>
+#1. Java
+Java is a high-level, object-oriented programming language used
+ to create complete applications. The language is platform 
+ independent, allowing it to run on any device that supports its environment. 
+
+In terms of growth relative to the market, demand for top-ranked
+ Java is actually growing slightly slower than the market.
+  But Java still leads second-ranked Python by a strong margin.
+   Its first-place ranking is secure for the foreseeable future.
+
+#2. Python
+Python is an interpreted, high-level, general-purpose programming
+language, and one of the most popular languages for rapid development.
+Python usage is widespread, with companies including Intel, IBM,
+ Netflix, and Meta using the language.
+
+Demand for Python is catching up to demand for Java.
+While Java is growing slower than the market,
+Python grew relative to the market. While Python’s
+growth may mean that it narrows Java’s lead, the wide 
+gap between them means we’re unlikely to see any place-trading.
+
+#3. SQL
+SQL is an industry-standard structured query language for creating, 
+defining, implementing, accessing, and maintaining relational databases. 
+In 2022, demand for SQL grew at a steady rate and managed to surpass C++. 
+It’s also growing faster relative to the market. 
+
+But while SQL improved its demand ranking, it decreased in its 
+popularity ranking. SQL’s third-place demand ranking is 
+noticeably higher than its sixth-place popularity ranking. 
+The source of this gap in supply and demand is unclear. 
+Interest in the SQL vs NoSQL debate has risen 
+steadily over the last decade. Developers turning toward 
+non-relational database systems could be a contributing factor.
+
+#4. C++
+C++ is a general purpose, compiled, and statically 
+typed programming language. Known as “C with Classes,” 
+C++ is an extension of C with the functionality of 
+user-defined data classes. The high performance of C++ 
+has made it the top language for use cases requiring 
+fast rendering, including browsers, banking applications, 
+and motion design software.
+
+In 2022, C++ fell from third to fourth place, 
+overtaken by SQL’s steady growth rate. Demand for C++ 
+is also growing slightly slower relative to the market. 
+However, demand for the language isn’t going anywhere. 
+C++ skills are vital for maintaining existing applications and infrastructure.
+
+#5. JavaScript
+JavaScript is a dynamic scripting language for adding
+ interactive behavior to web pages and applications. 
+ Primarily used for building interactive web experiences, 
+ JavaScript stands out as the first front-end language on our list.
+
+At fifth place, JavaScript has nearly four times the volume 
+of the sixth-ranked Bash. This calls attention to an important 
+characteristic of this demand-based ranking. After the top five, 
+there is a huge gap in volume, placing the leading 
+programming languages in a category of their own. 
+While JavaScript is growing slightly slower than the market, 
+its top-five ranking is secure.
+
+#6. Bash
+Bash is a command-line language for Unix operating systems. 
+The language allows developers (or anyone who works with data) 
+to work with computer files directly instead of using 
+a graphical user interface (GUI). 
+This makes it a useful skill to learn for cloud engineers and data scientists.
+
+Bash stands out on our list as the only in-demand language 
+that did not rank in popularity with developers. 
+It will be interesting to see how this misalignment between 
+supply and demand will affect the job market. 
+Will an abundance of opportunity and demand inspire 
+developers to learn the language? Or will a small 
+talent pool of developers skilled in the language 
+force employers to pay a premium for their skills? 
+In 2020 Bash was already correlated with higher 
+compensation than popular languages like C, C++, C#, Python, and Java.
+
+#7. C#
+C# is a general purpose, object-oriented, component-oriented
+ programming language developed in 2000 by Microsoft as part of
+its .NET initiative. C# is based on the C family of 
+languages, and has similarities to C, C++, Java, and JavaScript. 
+
+Demand for C# sits in the middle of the language family. 
+C++ far exceeds C# in demand, but C# holds a notable lead over C.
+
+#8. Go
+Go is an object-oriented programming language that Google 
+created in 2009 for networking and infrastructure. 
+But since launch it’s evolved into a general-purpose 
+language used in a wide range of applications.
+
+Go has been gaining popularity with developers for several 
+years. In 2022 it was the second fastest-growing language, 
+with its popularity increasing at a rate of 190%. 
+And that popularity is translating into hiring demand. 
+Demand for Go grew by 301% in 2022. 
+
+One potential side effect of Go’s success is that 
+it might affect the growth of larger languages. 
+Developers looking to learn a new general-purpose 
+language might start choosing Go over languages 
+with weak demand. (We’re looking at you, Ruby.)
+
+It will be interesting to see if Go has the momentum 
+to challenge the rankings of other languages on our list. 
+While demand for Go is growing at 140% relative to the market, 
+C# is only growing at 10% relative to the market. 
+Though momentum is on Go’s side, the gap between 
+the two languages might be too large to overcome in just a few years.
+
+#9. TypeScript
+TypeScript is an open-source, object-oriented language 
+that is an extension of JavaScript. Developed by Microsoft in 
+2012, TypeScript describes itself as “all of JavaScript, and then a bit more.” 
+
+TypeScript has been gaining popularity for years, 
+and ranked 4th in GitHub’s 2022 language rankings. Like Go, 
+we’re seeing that popularity translate into hiring demand. 
+At 392%, TypeScript had the highest growth in demand of any programming language.
+
+It will be interesting to see how TypeScript’s growth 
+will affect JavaScript. The two are tightly linked. 
+TypeScript’s growth could come at the expense of JavaScript, 
+or it could serve to amplify it.
+
+#10. R
+R is an open-source programming language for statistical 
+computing and data analysis. Researchers and scientists 
+use R for data visualization and statistical analysis in 
+a number of industries, including academia, research, 
+fintech, retail, government, healthcare, and social media.
+
+While it ranks low on our list, demand for R is growing. 
+At about 60% relative to the market, it posted the fifth-highest growth in demand.
+
+What’s interesting is that growing employer demand for R is 
+misaligned with its falling popularity with developers.
+
+From 2021 to 2022, R dropped from the thirteenth to the fifteenth 
+most popular language – dead last on our list. And while R grew 
+by 59% in 2022, most other languages we ranked grew two to four times faster. 
+
+How will this conflict between supply and demand play 
+out in the job market? Like Bash, we’ll be watching closely 
+to see if growing demand inspires developer interest 
+or raises the compensation for R skills.
+
+#11. PHP
+PHP is a widely-used open source and general-purpose 
+scripting language that is especially suited for web development. 
+PHP’s popularity is owed to the fact that it was one of the first 
+server-side languages that developers could embed into HTML. 
+
+While demand for PHP is low compared to other general-purpose languages, 
+its growth rate is actually quite high. Demand for PHP grew at 
+about 180% relative to the market, making it the second 
+fastest-growing language, surpassed only by TypeScript. 
+
+PHP might have enough momentum to challenge R and break 
+into the top ten. PHP’s volume is only slightly lower 
+than R’s, but it’s growing about three times faster 
+relative to the market. This rise in demand may help 
+correct PHP’s lagging compensation, which Stack Overflow 
+ranked second to last in 2020 and 2021.
+
+#12. C
+C is a general-purpose, statically-typed, and 
+compiled programming language. A foundational programming language, 
+C has become known as the mother of all languages. 
+
+While it ranks low on our list – third to last – 
+demand for C is still growing. At about 
+70% relative to the market, C posted the fourth-highest 
+growth rate out of any language. While it doesn’t have the volume 
+or growth to surpass PHP in the near future, its place is 
+secure against the two struggling languages that appear next on our list.
+
+#13. Swift
+Swift is an open source, general-purpose programming language 
+with a focus on performance, safety, and design patterns. 
+Created by Apple to replace Objective-C, Swift is 
+the go-to language for Mac, iPhone, and iPad iOS development. 
+
+In 2022, Swift had the second-largest decrease in 
+demand. Its volume in 2022 was only 80% of what it 
+was in 2021. Swift’s popularity is also limited, 
+demonstrated by its drop from nine to ten in our list on 
+language popularity. Taking both of these figures into 
+account, we can see that Swift is in a state of decline. 
+This can be attributed to the fact that Swift never quite caught 
+on as a general-purpose language, and has had to settle 
+for specialization in iOS development.
+
+#14. Ruby
+Ruby is an interpreted, dynamic, open-source programming 
+language with a focus on simplicity and productivity. Ruby 
+has a diverse range of use cases, including data-driven web 
+apps, marketplaces, and desktop apps. 
+
+In 2020 Ruby ranked fifth in Stack Overflow’s list of 
+highest paying programming languages. But despite high compensation, 
+demand for Ruby is declining. Its demand in 2022 was only 66% 
+of what it posted in 2021. It’s also growing the slowest 
+relative to the market out of any language on our list. 
+Developers have gradually shifted away from Ruby over the past several years,
+ and it’s not surprising to find its demand fading as well.
+
+Ruby is already dead last in demand. If it continues at 
+this rate, another language will inevitably take its place. 
+
+          </pre> -->
+
+
+          <h1 style="text-align: center; font-size: 50px;">Click to Read Top Searched Languages</h1>
+    <div class="language-container">
+      
+        <div class="language-box">
+            <a href="Data.html" style="color: white;">DataScience</a>
+            </div>
+        <div class="language-box">
+            <a href="Artificial" style="color: white;">Artificial Intelligence</a>
+        </div>
+        <div class="language-box">
+            <a href="python.html" style="color: white;">Python</a>
+        </div>
+        <div class="language-box">
+            <a href="java.html" style="color: white;">Java</a>
+        </div>
+        <div class="language-box">
+            <a href="Javascript.html" style="color: white;">JavaScript</a>
+        </div>
+        <div class="language-box">
+            <a href="cpp.html" style="color: white;">CPP</a>
+        </div>
+        <div class="language-box">
+            <a href="dsss.html" style="color: white;">Data Structures</a>
+        </div>
+        <div class="language-box">
+            <a href="bt.html" style="color: white;">Bootstrap</a>
+        </div>
+    </div>
+
+    <section class="container get-the-app">
+      <div class="semiContainer">
+        <div class="left">
+          <img src="images/mobileBanner.png" alt="">
+        </div>
+        <div class="right">
+          <h1>Coding Supermacy</h1>
+          <p>
+            We will send you a link, Open it on your phone to view our app in your Mobile
+          </p>
+          <div class="radio-button-container">
+            <div>
+              <input type="radio" id="email" name="download-app">
+              <label for="email" style="font-size:14px">Email</label>
+            </div>
+            <div>
+              <input type="radio" id="phone" name="download-app">
+              <label for="phone" style="font-size:14px">Phone</label>
+            </div>
+          </div>
+          
+  <div class="container mt-5">
+  <div class="input-container" style="padding-top: 15px;">
+    <input type="email" placeholder="Email">
+    <p> <a href="mailto:investor@company.com">investor@company.com</a></p>
+    <!-- <button onclick="shareAppLink()">Share App Link</button> -->
+  </div>
+  </div>
+          <div class="download-app-container">
+            
+            <div class="download-app-icons">
+              <img src="images/playStore.png" alt="">
+              <img src="images/appleStore.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="container footer">
+      <div class="footer-section1">
+        <img src="images/logo.png" alt="">
+        <div class="section1-buttoncontainer">
+          <button>
+            <img src="https://flagcdn.com/w40/in.png" alt="indian flag"
+            style="width:17px; color: black;"
+            ><p style="color: black;">India</p>
+          </button>
+          <button><i class="fa fa-globe"></i >
+            <p style="color: black;">English</p></button>
+        </div>
+      </div>
+      <div class="navigation-container">
+        <div class="link-container">
+          <h5>ABOUT </h5>
+          <a href="#" class="footer-link">Who we are</a>
+          <a href="#" class="footer-link">Blogs</a>
+          <a href="#" class="footer-link">Work with us</a>
+          <a href="#" class="footer-link">Investor Relation</a>
+          <a href="#" class="footer-link">Report Fraud</a>
+        </div>
+  
+        <div class="link-container">
+          <h5>CodeBox</h5>
+  
+          <a href="#" class="footer-link">Coding</a>
+          <a href="#" class="footer-link">Learning India</a>
+          <a href="#" class="footer-link">Hyperpure</a>
+          <a href="#" class="footer-link">LanguageLand</a>
+  
+        </div>
+  
+        <div class="link-container">
+          <h5>FOR CODING PRACTISES</h5>
+          <a href="#" class="footer-link">Partner With Us</a>
+          <a href="#" class="footer-link">Apps for You</a>
+          <br/>
+          <h5>FOR ENTERPRISES</h5>
+          <a href="#" class="footer-link">Zomato For Work</a>
+  
+        </div>
+  
+        <div class="link-container">
+          <h5>Learn More</h5>
+  
+          <a href="#" class="footer-link">Privacy</a>
+          <a href="#" class="footer-link">Security</a>
+          <a href="#" class="footer-link">Terms</a>
+          <a href="#" class="footer-link">SiteMap</a>
+  
+  
+        </div>
+  
+        <div class="link-container">
+          <h5>SOCIAL LINKS</h5>
+          <div class="social-links-container">
+            <button onclick="alert('LinkedIn')"><i class="fab fa-linkedin-in"></i></button>
+            <button onclick="alert('Instagram')"><i class="fab fa-instagram"></i></button>
+            <button onclick="alert('Twitter')"><i class="fa-brands fa-twitter"></i></button>
+            <button onclick="alert('Google')"><i class="fa-brands fa-google"></i></button>
+            <button onclick="alert('GitHub')"><i class="fa-brands fa-github"></i></button>
+          </div>
+          <br>
+          <!-- <img src="images/appleStore.png" alt="footer appstore logo" class="footer-section-logos">
+          <img src="images/playStore.png" alt="footer playstore logo" class="footer-section-logos"> -->
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="disclaimer" style="color: #333;">
+        By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Pvt Ltd. All rights reserved.
+      </div>
+  
+    </footer>
+  
+  
+  
+  <style>
+    
+  .semiContainer .right .radio-button-container{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  }
+  
+  .semiContainer .right .radio-button-container div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  }
+  
+  .semiContainer .right .radio-button-container div input{
+      height: 15px;
+      width: 15px;
+      accent-color: rgb(239,79,95);
+  }
+  
+  .semiContainer .right .input-container{
+      display: flex;
+      gap: 0.5rem;
+  }
+  
+  .input-container{
+      flex: wrap;
+      padding-right: 1100px;
+  }
+  
+  .input-container button, .input-container input{
+      padding: 10px 12px;
+  
+  }
+  
+  
+  
+  .input-container input {
+      flex: auto;
+      border: 1.5px solid grey;
+      outline: none;
+      border-radius: 5px;
+  }
+  
+  .input-container button{
+      border: none;
+      background-color: rgb(239,79,95);
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .right .download-app-container{
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+  }
+  
+  .section1-buttoncontainer{
+      display: flex;
+      gap: 1rem;
+      padding-left: 900px; ;
+  }
+  
+  .section1-buttoncontainer button{
+      padding: 5px 5px;
+      width: 90px;
+      border: 1px solid grey;
+      background-color: transparent;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap:10px;
+      cursor: pointer;
+  }
+  
+  .navigation-container{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      width: 90%;
+      margin: auto;
+      gap: 1rem;
+      padding: 3rem 0;
+  }
+  
+  
+  .link-container{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  }
+  
+  .link-container h5{
+      font-weight: 500;
+      font-size: 15px;
+      margin-bottom: 5px;
+      letter-spacing: 0.8px;
+  
+  }
+  
+  .footer-link{
+      text-decoration: none;
+      color: grey;
+      font-size: 13px;
+      font-weight: 300;
+  }
+  
+  .footer-link:hover{
+      color: black;
+  }
+  
+  
+  .social-links-container{
+      display: flex;
+      gap: 0.5rem;
+  
+  }
+  
+  .social-links-container button{
+      background-color: black;
+      border: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+  }
+  
+  
+  .social-links-container button i{
+      color: white;
+      font-size: 13px;
+  }
+  
+  .disclaimer{
+    /* background: #333; */
+      width: 90%;
+      margin: auto;
+      color: lemonchiffon;
+      font-size: 12px;
+      border-top: 1px solid grey;
+      padding-top: 2rem;
+  }
+  
+  
+  
+  @media only screen and (max-width: 900px){
+      .navigation-container{
+          grid-template-columns: repeat(3,1fr);
+      }
+  
+  .we-offer{
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  
+  }
+  
+  @media only screen and (max-width: 600px){
+      .navigation-container{
+          grid-template-columns: repeat(2,1fr);
+      }
+  
+  
+  }
+  
+  @media only screen and (max-width: 450px){
+      .navigation-container{
+          grid-template-columns: repeat(1,1fr);
+      }
+  
+      .we-offer{
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+  }
+  
+  
+  @media only screen and (max-width: 600px){
+      .navbar-menu-container a{
+          display: none;
+      }
+  
+      .navbar-menu-container .user-icon{
+          display: flex;
+      }
+  
+      .navbar{
+          padding: 16px 16px;
+      }
+  
+      .hero-section{
+          min-height: 80vh;
+      }
+  
+      .hero-section-input-container{
+          flex-direction: column;
+          background-color: transparent;
+          width:100%;
+      }
+  
+      .input-container-search , .input-container-location{
+          padding:15px;
+          border-radius: 10px;
+          width:95%;
+      }
+  
+      .hero-section-container{
+          min-height: calc(80vh - 60px);
+      }
+  
+      .hero-section-title{
+          font-size: 20px;
+          width: 95%;
+      }
+  
+  }
+  
+  @media only screen and (max-width: 1300px){
+  
+      .get-the-app .semiContainer .left, .get-the-app .semiContainer .right{
+          flex: 1;
+      }
+  
+      .get-the-app .semiContainer{
+          width: 80%;
+      }
+  }
+  
+  @media only screen and (max-width: 900px){
+  
+      .get-the-app{
+          padding: 2rem;
+       }
+  
+      .get-the-app .semiContainer{
+          width: 90%;
+      }
+  }
+  
+  @media only screen and (max-width: 700px){
+  
+      .get-the-app{
+          padding: 3rem 0;
+      }
+  
+      .get-the-app .input-container{
+          flex-direction: column;
+      }
+  
+      .get-the-app .semiContainer{
+          width: 80%;
+          flex-direction: column;
+      }
+  
+  } 
+  </style>
+  </body>
+  </html>
+  
